@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AmbitoRecursos"
+             x:Class="AmbitoRecursos.MainPage">
+    <ContentPage.Resources>
+        <Color x:Key="ColorPal">
+            Red 
+        </Color>
+        <Color x:Key="ColorSec">
+            Orange
+        </Color>
+        <Color x:Key="ColorTer">
+            Azure
+        </Color>
+        <ResourceDictionary>
+            
+        </ResourceDictionary> <!--Propiedad adjunta de contetpage-->
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition> <!--fila uno-->
+        </Grid.RowDefinitions> 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition> <!--Columna 1-->
+            <ColumnDefinition></ColumnDefinition> <!--Columna 1-->
+        </Grid.ColumnDefinitions>
+
+        <Button Text="Boton Uno"
+            VerticalOptions="Center"
+            BackgroundColor="{StaticResource Key=ColorPal}">
+        </Button>
+
+        <Button Text="Boton Dos"
+            BackgroundColor="{StaticResource Key=ColorSec}"
+            VerticalOptions="Center"
+            Grid.Column="1">
+        </Button>
+
+    </Grid>
+</ContentPage>
